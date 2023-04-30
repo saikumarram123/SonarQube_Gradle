@@ -12,7 +12,7 @@ pipeline {
 
         stage('SonarScan') {
             steps {
-                sh './gradlew sonar \
+                './gradlew sonar \
                     -Dsonar.projectKey=Gradle_Project \
                     -Dsonar.projectName='Gradle_Project' \
                     -Dsonar.host.url=http://localhost:9000 \
