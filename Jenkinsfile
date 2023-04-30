@@ -11,6 +11,13 @@ pipeline {
             //sh 'whoami'
             }
         } */
+        
+        stage('Gradle Build') {
+            steps {
+                sh 'chmod +x gradlew'
+                sh "./gradlew build"
+            }
+        }
 
         stage('SonarQube Analysis') {
             steps {
