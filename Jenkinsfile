@@ -2,7 +2,7 @@
 pipeline {
     agent any
     environment{
-        def sonar = tool 'SonarQubeLocal'
+        def sonar = tool 'SonarScanner'
     }
     stages {
         /* stage('SCM Checkout') {
