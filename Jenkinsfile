@@ -1,9 +1,9 @@
 /* groovylint-disable-next-line CompileStatic */
 pipeline {
     agent any
-    environment{
-        def sonar = tool 'SonarScanner'
-    }
+//     environment{
+//         def sonar = tool 'SonarScanner'
+//     }
     stages {
         /* stage('SCM Checkout') {
             steps {
