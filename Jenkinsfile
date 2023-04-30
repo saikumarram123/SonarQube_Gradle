@@ -2,7 +2,7 @@
 pipeline {
     agent any
     environment{
-        SONAR_LOGIN = credentials('dockerhub-creds')
+        SONAR_LOGIN = credentials('Sonar_Scan_Token')
     }
     stages {
         /* stage('SCM Checkout') {
