@@ -21,7 +21,7 @@ pipeline {
 //                     -Dsonar.token=sqp_e2497c7ad5f5ed82b3775e082efd2b770f7e6ba7'
                 
                 //withSonarQubeEnv(SonarQubeLocal) {
-                chmod +x gradlew
+                sh 'chmod +x gradlew'
                 sh "./gradlew sonar"
             //}
            }
