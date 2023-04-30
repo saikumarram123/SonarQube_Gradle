@@ -22,7 +22,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 sh 'chmod +x gradlew'
-                sh "./gradlew sonar -Dsonar.token=$SONR_LOGIN"
+                sh "./gradlew sonar -Dsonar.token=$SONAR_LOGIN"
       
            }
         }
