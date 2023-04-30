@@ -24,7 +24,8 @@ pipeline {
                 with SonarQubeEnv(installtionName: SQ_Server){
                     
                 sh 'chmod +x gradlew'
-                sh "./gradlew sonar -Dsonar.token=$SONAR_LOGIN"
+                sh "./gradlew sonar"
+                //-Dsonar.token=$SONAR_LOGIN"
                }
       
            }
