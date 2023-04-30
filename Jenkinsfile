@@ -17,7 +17,7 @@ pipeline {
 //                     -Dsonar.projectName='Gradle_Project' \
 //                     -Dsonar.host.url=http://localhost:9000 \
 //                     -Dsonar.token=sqp_e2497c7ad5f5ed82b3775e082efd2b770f7e6ba7'
-                withSonarQubeEnv(installationName SonarQubeLocal) {
+                withSonarQubeEnv(SonarQubeLocal) {
                 sh "./gradlew sonar"
             }
            }
