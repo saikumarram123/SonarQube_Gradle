@@ -21,7 +21,7 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                with SonarQubeEnv(installtionName: SQ_Server){
+                with SonarQubeEnv(installtionName: 'SQ_Server'){
                     
                 sh 'chmod +x gradlew'
                 sh "./gradlew sonar"
