@@ -20,10 +20,16 @@ pipeline {
 //                     -Dsonar.host.url=http://localhost:9000 \
 //                     -Dsonar.token=sqp_e2497c7ad5f5ed82b3775e082efd2b770f7e6ba7'
                 
-                //withSonarQubeEnv(SonarQubeLocal) {
-                sh 'chmod +x gradlew'
-                sh "./gradlew sonar -Dsonar.token=sqp_e2497c7ad5f5ed82b3775e082efd2b770f7e6ba7"
-            //}
+           
+//                 sh 'chmod +x gradlew'
+//                 sh "./gradlew sonar -Dsonar.token=sqp_e2497c7ad5f5ed82b3775e082efd2b770f7e6ba7"
+                
+                ./gradlew sonar \
+  -Dsonar.projectKey=abc \
+  -Dsonar.projectName='abc' \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=sqp_fea218ab1f3a7106cb0d354e15378c24cc0119c7
+      
            }
         }
     }
