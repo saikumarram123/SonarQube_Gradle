@@ -20,7 +20,7 @@ pipeline {
                 def sonar = tool 'SonarQubeLocal';
                 //withSonarQubeEnv(SonarQubeLocal) {
                 sh "./gradlew sonar"
-            }
+            //}
            }
         }
     }
