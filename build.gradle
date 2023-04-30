@@ -10,7 +10,7 @@ version = '1.0'
 
 sonar {
     properties {
-         property "sonar.projectKey", "Gradle App"
+         property "sonar.projectKey", "Gradle_App"
         property "sonar.projectName", "Gradle_App"
     }
 }
