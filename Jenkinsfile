@@ -22,7 +22,7 @@ pipeline {
                 
                 //withSonarQubeEnv(SonarQubeLocal) {
                 sh 'chmod +x gradlew'
-                sh "./gradlew sonar -Dsonar.token=sqp_e2497c7ad5f5ed82b3775e082efd2b770f7e6ba7'"
+                sh "./gradlew sonar -Dsonar.token=sqp_e2497c7ad5f5ed82b3775e082efd2b770f7e6ba7"
             //}
            }
         }
