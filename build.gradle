@@ -35,11 +35,14 @@ mainClassName = 'App'
 
 test {
     useJUnitPlatform()
+    finalizedBy jacocoTestReport
 }
 
 jacocoTestReport {
+    dependsOn test
     reports {
         xml.required = true
-        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+        //html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
     }
 }
+
