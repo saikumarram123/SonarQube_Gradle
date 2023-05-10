@@ -1,6 +1,8 @@
-# SonarQube Scanner for Gradle
+# SonarQube Scanner for Gradle 
 
 This example demonstrates how to analyze a simple project built with [Gradle](https://gradle.org/).
+
+<p> <strong> Read the detailed article on: </strong> </p> <a href = "https://medium.com/@sagarkrp/how-to-install-and-configure-sonarqube-with-jenkins-2fe6c732620" target ="_blank"><img src = "https://img.shields.io/badge/medium-%23E4405G.svg?&style=for-the-badge&logo=medium&logoColor=black&white"></a>
 
 ## Prerequisites
 
