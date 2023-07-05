@@ -25,7 +25,7 @@ pipeline {
                     
                 sh 'chmod +x gradlew'
                 sh "./gradlew sonar"
-                -Dsonar.token=$SONAR_LOGIN"
+                -Dsonar.token="$SONAR_LOGIN"
                }
       
            }
